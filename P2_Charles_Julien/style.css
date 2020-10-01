@@ -24,6 +24,7 @@ body {
 }
 .title2{
     font-size: 44px;
+    font-weight: bold;
  }
 .title3{
     font-size: 32px ;
@@ -120,7 +121,6 @@ nav a{
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-self: flex-start;
-    
 }
 
 #locationSearch {
@@ -129,8 +129,6 @@ nav a{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    border: 2px solid #F2F2F2;
-    border-radius: 30px;
 }
 
 #locationSearch i {
@@ -149,6 +147,9 @@ nav a{
     padding-left: 1em;
     font-size: 30px;
     font-family: "Raleways";
+    font-weight: bold;
+    border-top: 2px solid #F2F2F2; 
+    border-bottom:  2px solid #F2F2F2;
 }
 
 #locationSearch input {
@@ -167,6 +168,7 @@ nav a{
     width: 260px;
     font-size: 30px;
     font-family: "Raleways";
+    font-weight: bold;
 }
 
 /*FILTRES*/
@@ -193,17 +195,14 @@ nav a{
     height: 80px;
     position: relative;
     margin: 3em 2em;
-
     display: flex;
     flex-flow: row;
     align-items: center;
-
-    border: 1px solid grey;
-    border-left: 1px solid #deebff;
+    border: 2px solid #F2F2F2;
+    
     border-radius: 100px;
     text-decoration: none;
-
-    transition: 200ms ease;
+    transition: 100ms ease;
 }
 
 #filtreBoite .filter:hover {
@@ -324,13 +323,13 @@ nav a{
     display: none;
 }
 .offerBox h3{
-    margin: 15px 20px;
+    margin: 10px 20px;
 }
 .offerBox p{
-    margin: 15px 20px;
+    margin: 10px 20px;
 }
 .offerBox .note{
-    margin: 15px 20px;
+    margin: 12px 20px;
     color: #0065FC;
 }
 .offerBox .note .grey{
@@ -353,6 +352,15 @@ nav a{
     background-color: #F2F2F2;
     padding: 80px 60px 0px 60px;
 }
+#titleLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#titleLine .fas{
+    font-size: 40px;
+    padding-top: 5px;
+}
 #popPicture{
     display: flex;
     flex-flow: column nowrap;
@@ -362,7 +370,7 @@ nav a{
     margin-bottom: 50px;
 }
 .offerPop{
-    
+    position: relative;
     padding: 4px;
     background-color: white;
     max-height: 250px;
@@ -392,10 +400,13 @@ nav a{
     margin: 15px 20px;
 }
 .offerPop p{
+    
     margin: 20px 20px;
 }
 .offerPop .note{
-    margin-top: 90px;
+    position: absolute;
+    right: 266px;
+    bottom: 25px;
     color: #0065FC;
 }
 .offerPop .note .grey{
