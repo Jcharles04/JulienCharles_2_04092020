@@ -26,8 +26,8 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    margin: 0;
-    
+    margin: auto;
+    max-width: 2114px;
 }
 .title2 {
     font-family: "Raleways-extra-bold";
@@ -586,7 +586,7 @@ footer a{
 |        MEDIA QUERIES            |
 --------------------------------*/
 
-@media only screen and (max-device-height : 1024px) {
+@media only screen and (max-device-width : 1366px){
 
     header {
         padding: 0 0;
