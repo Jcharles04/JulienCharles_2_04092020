@@ -155,6 +155,7 @@ a {
 
 #locationSearch #address {
     flex: 1;
+    position: relative;
     padding-left: 1em;
     font-size: 22px;
     font-family: "Raleways-bold";
@@ -585,7 +586,7 @@ footer a{
 |        MEDIA QUERIES            |
 --------------------------------*/
 
-@media only screen and (max-device-width : 1024px) {
+@media only screen and (max-device-height : 1024px) {
 
     header {
         padding: 0 0;
@@ -695,17 +696,18 @@ footer a{
     #section1>p {
         margin: 0;
     }
+    /*---*/
 
     #locationSearch {
-        width: 100%;
+        width: 90%;
         height: 130px;
-        margin: 6em auto 2.5em auto;
+        margin: 6em 0 2.5em 0;
         justify-content: center;    
     }
 
     #locationSearch i {
         padding: 1.4em 1.1em;
-        align-items: center;
+        
         font-size: 45px;
         border-bottom-left-radius: 40px;
         border-top-left-radius: 40px;
@@ -719,7 +721,9 @@ footer a{
     }
 
     #locationSearch button {
-        width: 75px;
+        height: 130px;
+        position: absolute;
+        right: 40px;
         border: none;
         border-radius: 40px;
         width: 135px;
@@ -733,6 +737,8 @@ footer a{
     #locationSearch button .icon {
         display: block;
     }
+
+    /*---*/
 
     #filtreBoite h3{
         margin: 0px 0px 20px 0px;
@@ -755,6 +761,8 @@ footer a{
         width: 3em;
         font-size: 45px;
     }
+
+    /*---*/
 
     #info {
         margin: 20px 0 50px 0;
@@ -829,6 +837,9 @@ footer a{
         font-size: 50px;
         font-family: "Raleways-extra-bold";
     }
+
+    /*---*/
+
     #box2{
         border-radius: 0;
     }
@@ -872,6 +883,8 @@ footer a{
         font-size: 32px;
         height: 2em;
     }
+
+    /*-----*/
 
     #box3 {
         display:grid;
@@ -926,6 +939,8 @@ footer a{
     .activityBox .title3 {
         height: 150px;
     }
+
+    /*-----*/
 
     footer {
         margin-top: 140px;
