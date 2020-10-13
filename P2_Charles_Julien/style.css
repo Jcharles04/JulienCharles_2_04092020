@@ -311,9 +311,9 @@ a {
     background-color: white;
     width: 330px;
     height: 252px;
+    color: black;
     overflow: hidden;
     border-radius: 30px;
-    color: #000;
     margin-bottom: 40px;
     box-shadow:1px 1px 20px  #dadada ;  
 }
