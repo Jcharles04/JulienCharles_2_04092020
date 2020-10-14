@@ -109,17 +109,12 @@ a {
     color:  #0065FC;
 }
 
-#link-hebergements:focus {
-    border-top:3px solid #0065FC;
-    color: #0065FC;
-}
-
 #link-hebergements:hover {
     border-top:3px solid #0065FC;
     color: #0065FC;
 }
 
-#link-activites:focus {
+#link-hebergements:focus {
     border-top:3px solid #0065FC;
     color: #0065FC;
 }
@@ -129,13 +124,18 @@ a {
     color: #0065FC;
 }
 
+#link-activites:focus {
+    border-top:3px solid #0065FC;
+    color: #0065FC;
+}
+
 /*SEARCH*/
 
-#section1 h2 {
+#tagline h2 {
     margin: 15px 0 8px 0;
 }
 
-#section1>p {
+#tagline p {
     margin: 0 0 32px 0;
 }
 
@@ -190,23 +190,23 @@ a {
 
 /*FILTRES*/
 
-#filtreBoite {
+#filtreBox {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     margin: 3em 0 2em 0;
 }
-#filtreBoite h3 {
+#filtreBox h3 {
     margin:0 25px 0 12px;
 }
 
-#filtreBoite > div {
+#filtreBox > div {
     display: flex;
     flex-flow: row wrap;
     margin-right: 20px;
 }
 
-#filtreBoite .filter {
+#filtreBox .filter {
     height: 60px;
     position: relative;
     margin: 0 1.2em 0 1.2em;
@@ -219,12 +219,17 @@ a {
     transition: 100ms ease;
 }
 
-#filtreBoite .filter:hover {
+#filtreBox .filter:hover {
     background-color: #0065FC;
     border-color: #0065FC;
 }
 
-#filtreBoite .filter span {
+#filtreBox .filter:focus {
+    background-color: #0065FC;
+    border-color: #0065FC;
+}
+
+#filtreBox .filter span {
     color: #000;
     margin-left: 2.1em;
     padding: 0 1.1em;
@@ -234,11 +239,15 @@ a {
     font-weight: 100;
 }
 
-#filtreBoite .filter:hover span {
+#filtreBox .filter:hover span {
     color: #F2F2F2;
 }
 
-#filtreBoite .filter::before {
+#filtreBox .filter:focus span {
+    color: #F2F2F2;
+}
+
+#filtreBox .filter::before {
     left: -6px;
     position: absolute;
     display: flex;
@@ -304,14 +313,14 @@ a {
     margin: 20px 0 40px 0;
 }
 
-#boxPicture {
+#heberBox {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 0.5em;
 }
 
-.offerBox {
+.heberTile {
     padding: 6px;
     background-color: white;
     width: 330px;
@@ -323,32 +332,32 @@ a {
     box-shadow:1px 1px 20px  #dadada ;  
 }
 
-.offerPicture {
+.heberPicture {
     overflow: hidden;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
-    width:330px;
+    width:100%;
     height: 155px;
 }
 
-.offerPicture img {
+.heberPicture img {
     display: none;
 }
 
-.offerBox .legende {
+.heberTile .legende {
     display: flex;
     flex-flow: column nowrap;
     margin-left: 4px;
 }
 
-.offerBox h3 {
+.heberTile h3 {
     margin: 7px 14px;
 }
 
-.offerBox p {
+.heberTile p {
     margin: 7px 14px;
 }
 
@@ -356,13 +365,13 @@ a {
     font-weight: bold;
 }
 
-.offerBox .note {
+.heberTile .note {
     font-size: 14px;
     margin: 2px 14px;
     color: #0065FC;
 }
 
-.offerBox .note .grey {
+.heberTile .note .grey {
     color: #b3b3b3;
 }
 
@@ -399,37 +408,38 @@ a {
     font-size: 28px;
 }
 
-#popPicture {
+#popBox {
     display: flex;
     flex-flow: column nowrap;
 }
 
-.offerPop {
+.popTile {
     display: flex;
     padding: 6px;
     background-color: white;
-    min-height: 175px;
+    height: 175px;
     box-shadow:1px 1px 20px  #dadada ;
     border-radius: 30px;
     color: #000;
     margin-bottom: 45px;
 }
 
-.offerPicture2 {
+.popPicture { 
     background-position: center ; 
     background-size: cover;
     overflow: hidden;
+    background-repeat: no-repeat;
     width: 42%;
     height: 100%;
     border-top-left-radius: 25px;
     border-bottom-left-radius:25px;
 }
 
-.offerPicture2 img {
+.popPicture img {
     display: none;
 }
 
-.offerPop .legende {
+.popTile .legende {
     display: flex;
     flex-flow: column nowrap;
     width: 58%;
@@ -440,26 +450,26 @@ a {
     flex: 1;
 }
 
-.offerPop h3 {
+.popTile h3 {
     margin: 11px 0;
 }
 
-.offerPop p {
+.popTile p {
     
     margin: 11px 0;
 }
 
-.offerpop span {
+.popTile span {
     font-weight: bold;
 }
 
-.offerPop .note {
+.popTile .note {
     font-size:14px;
     height: 1.9em;
     color: #0065FC;
 }
 
-.offerPop .note .grey {
+.popTile .note .grey {
     color: #b3b3b3;
 }
 
@@ -478,7 +488,7 @@ a {
     grid-column-gap: 52px;
 }
 
-.activityBox {
+.activityTile {
     width: 100%;
     height: 100%;
     display: flex;
@@ -497,7 +507,7 @@ a {
     background-size: cover;
 }
 
-.activityBox .title3 {
+.activityTile .title3 {
     padding: 0 0 0 20px;
     min-height: 80px;
     margin: 0;
@@ -591,23 +601,84 @@ footer a{
 /*--------------------------------
 |        MEDIA QUERIES           |
 --------------------------------*/
-@media only screen and (max-width : 1804px){
-    #filtreBoite h3 {
-        margin:0 25px 12px 12px;
+@media only screen and (max-width : 1804px) and (min-width : 1356px) {
+    
+    #filtreBox h3 {
+        margin: 0 25px 12px 12px;
     }
 
-    #filtreBoite .filter {
+    #filtreBox .filter {
         margin: 0 1.2em 1.2em 1.2em;
     }
-
-    #boxPicture {
+    #box1 {
+        flex: 2
+    }
+    #heberBox {
         justify-content: space-around;
     }
+
+    .popTile {
+        height:220px
+    }
+    .popPicture {
+        width: 55%
+    } 
+    
+    .popTile .legende {
+        width: 45%
+    }
+
     #seeMore {
         margin-bottom: 30px;
     }
 }
-@media only screen and (max-width : 1244px){
+
+@media only screen and (max-width : 1356px){
+
+    #filtreBox h3 {
+        margin: 0 25px 12px 12px;
+    }
+
+    #filtreBox .filter {
+        margin: 0 1.2em 1.2em 1.2em;
+    }
+    #box1 {
+        flex: 1.5;
+    }
+    #heberBox {
+        justify-content: space-around;
+    }
+
+    .heberTile {
+        width: 400px;
+   }
+
+    #seeMore {
+        margin-bottom: 30px;
+    }
+    
+    #popBox {
+        width: auto;
+    }
+
+    .popTile {
+       height: 220px
+    }
+
+    .popPicture {
+        width: 55%
+    } 
+    
+    .popTile .legende {
+        width: 45%
+    }
+
+    .popTile {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width : 1200px){
 
     header {
         padding: 0 0;
@@ -713,11 +784,11 @@ footer a{
         flex-direction: column;
     }
 
-    #section1 h2 {
+    #tagline h2 {
         margin: 85px 0 35px 0;
     }
 
-    #section1>p {
+    #tagline p {
         margin: 0;
     }
     /*---*/
@@ -765,24 +836,24 @@ footer a{
 
     /*---*/
 
-    #filtreBoite h3{
+    #filtreBox h3{
         margin: 0px 0px 20px 0px;
     }
 
-    #filtreBoite .filter {   
+    #filtreBox .filter {   
         margin: 1em 1.4em 1em 0em;
         height: 125px;  
         border: 5px solid #F2F2F2; 
     }
 
-    #filtreBoite .filter span {
+    #filtreBox .filter span {
         font-size: 42px;
         padding: 0 1em 0 1.6em;
         font-family: "Raleways-extra-bold";
         font-weight: 100;
     }
 
-    #filtreBoite .filter::before {
+    #filtreBox .filter::before {
         height: 3em;
         width: 3em;
         font-size: 45px;
@@ -820,11 +891,11 @@ footer a{
         margin: 60px 0;
     }
 
-    #boxPicture {
+    #heberBox {
         flex-direction: column;
     }
 
-    .offerBox {
+    .heberTile {
         width: auto;
         height: 480px;
         padding: 12px;
@@ -832,29 +903,29 @@ footer a{
         border-radius: 50px;   
     }
 
-    .offerPicture {
+    .heberPicture {
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         height: 290px;
     }
 
-    .offerBox .legende {
+    .heberTile .legende {
         padding: 15px 0 0 20px;
     }
 
-    .offerBox p {
+    .heberTile p {
         margin: 10px 14px;
         font-weight: 100;
         font-size: 38px;
     }
 
-    .offerBox .note {
+    .heberTile .note {
         margin-top: 1px;
         font-size: 32px;
         height: 2.2em;
     }
 
-    .offerPicture {
+    .heberPicture {
         width: auto;
         
     }
@@ -880,34 +951,34 @@ footer a{
         font-size: 65px;
     }
 
-    .offerPop{
+    #popBox {
+        padding: 60px 0 60px 0;
+    }
+
+    .popTile {
         height: 360px;
         padding: 13px;
         border-radius: 50px;
         margin-bottom: 30px; 
     }
 
-    #popPicture {
-        padding: 60px 0 60px 0;
-    }
-    
-    .offerPicture2 {
+    .popPicture {
         height:360px;
         width: 360px;
         border-top-left-radius: 38px;
         border-bottom-left-radius: 38px;
     }
 
-    .offerPop .legende {
+    .popTile .legende {
         padding: 20px 0 0 55px;
     }
 
-    .offerPop p {
+    .popTile p {
         font-weight: 100;
         font-size: 38px;
     }
 
-    .offerPop .note {
+    .popTile .note {
         font-size: 32px;
         height: 2em;
     }
@@ -928,7 +999,7 @@ footer a{
         margin-left: 70px;
         margin-bottom:70px;
     }
-    .activityBox {
+    .activityTile {
         border-radius: 50px;
     }
 
@@ -964,7 +1035,7 @@ footer a{
         grid-row: 6;
     }
 
-    .activityBox .title3 {
+    .activityTile .title3 {
         height: 150px;
     }
 

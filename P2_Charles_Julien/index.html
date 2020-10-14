@@ -18,9 +18,11 @@
             </header>
             <section>
                 <div id="section1">
-                   <h2 class="title2">Trouvez votre hebergement pour des vacances de rêve</h2>
-                   <p>En plein centre ville ou en pleine nature</p>
-                   <form id="locationSearch" name="locationSearch" action="#" >
+                    <div id= "tagline">
+                        <h2 class="title2">Trouvez votre hebergement pour des vacances de rêve</h2>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>    
+                    <form id="locationSearch" name="locationSearch" action="#" >
                         <label for="address" ></label>
                         <i class="fas fa-map-marker-alt"></i>
                         <input id="address" name="address" type="text" value="Marseille, France" >
@@ -29,7 +31,7 @@
                             <span class="icon fas fa-search"></span>
                         </button>
                     </form>
-                    <div id="filtreBoite">
+                    <div id="filtreBox">
                         <h3 class="title3">Filtres</h3>
                         <div>
                             <a class="filter fas fa-money-bill-wave" href="#"><span>Économique</span></a>
@@ -42,15 +44,15 @@
                         <i class="fas fa-info"></i>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
-                </div>                 
+                </div>                      
             </section>
             <section>
                 <div id="doubleBox">
                     <div id="box1">
                         <h2 id="hebergements" class="title2">Hébergements à Marseille</h2>
-                        <div id="boxPicture">
-                            <a class="offerBox" href="#">
-                                <div class="offerPicture" style="background-image:url(images/hebergements/3_medium/1.jpg)"><img src="images/hebergements/3_medium/1.jpg" alt="Photo chambre Auberge la Cannebière"></div>                              
+                        <div id="heberBox">
+                            <a class="heberTile" href="#">
+                                <div class="heberPicture" style="background-image:url(images/hebergements/3_medium/1.jpg)"><img src="images/hebergements/3_medium/1.jpg" alt="Photo chambre Auberge la Cannebière"></div>                              
                                 <div class="legende">
                                     <div class="text">    
                                         <h3 class="title3">Auberge la Cannebière</h3>
@@ -65,8 +67,8 @@
                                     </div>
                                 </div>    
                             </a>
-                            <a class="offerBox" href="#">
-                                <div class="offerPicture" style="background-image:url(images/hebergements/3_medium/2.jpg)"><img src="images/hebergements/3_medium/2.jpg" alt="Photo chambre Hôtel du Port"></div>                              
+                            <a class="heberTile" href="#">
+                                <div class="heberPicture" style="background-image:url(images/hebergements/3_medium/2.jpg)"><img src="images/hebergements/3_medium/2.jpg" alt="Photo chambre Hôtel du Port"></div>                              
                                 <div class="legende">
                                     <div class="text">     
                                         <h3 class="title3">Hôtel du Port</h3>
@@ -81,8 +83,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="offerBox" href="#">
-                                <div class="offerPicture" style="background-image:url(images/hebergements/3_medium/3.jpg)"><img src="images/hebergements/3_medium/3.jpg" alt="Photo chambre Hôtel Les Mouettes"></div>                              
+                            <a class="heberTile" href="#">
+                                <div class="heberPicture" style="background-image:url(images/hebergements/3_medium/3.jpg)"><img src="images/hebergements/3_medium/3.jpg" alt="Photo chambre Hôtel Les Mouettes"></div>                              
                                 <div class="legende">
                                     <div class="text">     
                                         <h3 class="title3">Hôtel Les Mouettes</h3>
@@ -97,8 +99,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="offerBox" href="#">
-                                <div class="offerPicture" style="background-image:url(images/hebergements/3_medium/4.jpg)"><img src="images/hebergements/3_medium/4.jpg" alt="Photo chambre Hôtel de la Mer"></div>                              
+                            <a class="heberTile" href="#">
+                                <div class="heberPicture" style="background-image:url(images/hebergements/3_medium/4.jpg)"><img src="images/hebergements/3_medium/4.jpg" alt="Photo chambre Hôtel de la Mer"></div>                              
                                 <div class="legende">
                                     <div class="text">     
                                         <h3 class="title3">Hôtel de la Mer</h3>
@@ -113,8 +115,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="offerBox" href="#">
-                                <div class="offerPicture" style="background-image:url(images/hebergements/3_medium/5.jpg)"><img src="images/hebergements/3_medium/5.jpg" alt="Photo chambre Auberge Le Panier"></div>                              
+                            <a class="heberTile" href="#">
+                                <div class="heberPicture" style="background-image:url(images/hebergements/3_medium/5.jpg)"><img src="images/hebergements/3_medium/5.jpg" alt="Photo chambre Auberge Le Panier"></div>                              
                                 <div class="legende">
                                     <div class="text">     
                                         <h3 class="title3">Auberge Le Panier</h3>
@@ -129,8 +131,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <a class="offerBox" href="#">
-                                <div class="offerPicture" style="background-image:url(images/hebergements/3_medium/6.jpg)"><img src="images/hebergements/3_medium/6.jpg" alt="Photo chambre Hôtel chez Amina"></div>                              
+                            <a class="heberTile" href="#">
+                                <div class="heberPicture" style="background-image:url(images/hebergements/3_medium/6.jpg)"><img src="images/hebergements/3_medium/6.jpg" alt="Photo chambre Hôtel chez Amina"></div>                              
                                 <div class="legende">
                                     <div class="text">     
                                         <h3 class="title3">Hôtel chez Amina</h3>
@@ -153,9 +155,9 @@
                             <h2 class="title2">Les plus populaires</h2>
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <div id="popPicture">
-                            <a class="offerPop" href="#">
-                                <div class="offerPicture2" style="background-image:url(images/hebergements/3_medium/7.jpg)"><img src="images/hebergements/3_medium/7.jpg" alt="Photo chambre Hôtel Le soleil du matin"></div>
+                        <div id="popBox">
+                            <a class="popTile" href="#">
+                                <div class="popPicture" style="background-image:url(images/hebergements/3_medium/7.jpg)"><img src="images/hebergements/3_medium/7.jpg" alt="Photo chambre Hôtel Le soleil du matin"></div>
                                 <div class="legende">
                                     <div class="text">
                                         <h3 class="title3">Hôtel Le soleil du matin</h3>
@@ -170,8 +172,8 @@
                                     </div>
                                 </div>          
                             </a>
-                            <a class="offerPop" href="#">
-                                <div class="offerPicture2" style="background-image:url(images/hebergements/3_medium/8.jpg)"><img src="images/hebergements/3_medium/8.jpg" alt="Photo chambre Au coeur de l'eau Chambres d'hôtes"></div>                                
+                            <a class="popTile" href="#">
+                                <div class="popPicture" style="background-image:url(images/hebergements/3_medium/8.jpg)"><img src="images/hebergements/3_medium/8.jpg" alt="Photo chambre Au coeur de l'eau Chambres d'hôtes"></div>                                
                                 <div class="legende">
                                     <div class="text">
                                         <h3 class="title3">Au coeur de l'eau Chambres d'hôtes</h3>
@@ -186,8 +188,8 @@
                                     </div>
                                 </div>        
                             </a>
-                            <a class="offerPop" href="#">
-                                <div class="offerPicture2" style="background-image:url(images/hebergements/3_medium/9.jpg)"><img src="images/hebergements/3_medium/9.jpg" alt="Photo chambre Hôtel Tout bleu et Blanc"></div>                                
+                            <a class="popTile" href="#">
+                                <div class="popPicture" style="background-image:url(images/hebergements/3_medium/9.jpg)"><img src="images/hebergements/3_medium/9.jpg" alt="Photo chambre Hôtel Tout bleu et Blanc"></div>                                
                                 <div class="legende">
                                     <div class="text">  
                                         <h3 class="title3">Hôtel Tout bleu et Blanc</h3>
@@ -209,27 +211,27 @@
             <section>
                 <h2 id="activites" class="title2">Activités à Marseille</h2>                
                 <div id="box3">
-                    <a class="activityBox one" href="#">
+                    <a class="activityTile one" href="#">
                         <div class="activityPicture" style="background-image:url(images/activites/3_medium/1.jpg)"><img src="images/activites/3_medium/1.jpg" alt="Photo Vieux Port"></div>                              
                         <h3 class="title3">Vieux Port</h3> 
                     </a>
-                    <a class="activityBox two" href="#">
+                    <a class="activityTile two" href="#">
                         <div class="activityPicture" style="background-image:url(images/activites/3_medium/2.jpg)"><img src="images/activites/4_small/2.jpg" alt="Photo Fort de Pomègues"></div>                              
                         <h3 class="title3">Fort de Pomègues</h3> 
                     </a>
-                    <a class="activityBox three" href="#">
+                    <a class="activityTile three" href="#">
                         <div class="activityPicture" style="background-image:url(images/activites/3_medium/3.jpg)"><img src="images/activites/4_small/3.jpg" alt="Photo Iles du Frioul"></div>                              
                         <h3 class="title3">Îles du Frioul</h3> 
                     </a>
-                    <a class="activityBox four" href="#">
+                    <a class="activityTile four" href="#">
                         <div class="activityPicture" style="background-image:url(images/activites/3_medium/4.jpg)"><img src="images/activites/3_medium/4.jpg" alt="Photo Parc National des Calanques"></div>                              
                         <h3 class="title3">Parc National des Calanques</h3> 
                     </a>
-                    <a class="activityBox five" href="#">
+                    <a class="activityTile five" href="#">
                         <div class="activityPicture" style="background-image:url(images/activites/3_medium/5.jpg)"><img src="images/activites/4_small/5.jpg" alt="Photo Notre-Dame-de-la-Garde"></div>                              
                         <h3 class="title3">Notre-Dame-de-la-Garde</h3> 
                     </a>
-                    <a class="activityBox six" href="#">
+                    <a class="activityTile six" href="#">
                         <div class="activityPicture" style="background-image:url(images/activites/3_medium/6.jpg)"><img src="images/activites/4_small/6.jpg" alt="Photo Port Longchamp"></div>                              
                         <h3 class="title3">Port Longchamp</h3> 
                     </a>
