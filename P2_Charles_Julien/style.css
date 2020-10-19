@@ -101,7 +101,6 @@ a {
 
 #link-inscrire {
     grid-column: 5;
-    padding: auto;
     border-top: 3px solid transparent;
     display: flex;
     align-items: center;
@@ -680,7 +679,7 @@ footer a{
     }
 }
 
-@media only screen and (max-width : 1200px) , screen and (max-device-width : 1200px){
+@media only screen and (max-width : 1200px){
 
     #main{
         min-width: 500px;
