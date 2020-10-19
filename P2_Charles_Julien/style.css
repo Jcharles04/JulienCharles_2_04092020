@@ -601,6 +601,7 @@ footer a{
 /*--------------------------------
 |        MEDIA QUERIES           |
 --------------------------------*/
+
 @media only screen and (max-width : 1804px) and (min-width : 1356px) {
     
     #filtreBox h3 {
@@ -621,11 +622,11 @@ footer a{
         height:220px
     }
     .popPicture {
-        width: 55%
+        width: 50%
     } 
     
     .popTile .legende {
-        width: 45%
+        width: 50%
     }
 
     #seeMore {
@@ -666,11 +667,12 @@ footer a{
     }
 
     .popPicture {
-        width: 55%
+        width: 50%
     } 
     
     .popTile .legende {
-        width: 45%
+        width: 50%;
+        flex:1;
     }
 
     .popTile {
@@ -678,7 +680,12 @@ footer a{
     }
 }
 
-@media only screen and (max-width : 1200px){
+@media only screen and (max-width : 1200px) , screen and (max-device-width : 1200px){
+
+    #main{
+        min-width: 500px;
+        max-width: 1200px;
+    }
 
     header {
         padding: 0 0;
@@ -689,66 +696,62 @@ footer a{
     }
 
     footer {
-        padding: 0 0 50px 0;
+        padding: 0;
     }
 
     .title2 {
         font-family: "Raleways-extra-bold";
         font-weight: 100;
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .title3 {
         font-family: "Raleways-extra-bold";
         font-weight: 100;
-        font-size: 45px ;   
+        font-size: 32px; 
     }
 
     p {
         font-weight: 600;
-        font-size: 42px;
+        font-size: 25px;
     }
 
     .note {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     /*-----*/
 
     #firstRow {
         grid-template-columns: 50% 50%;
-        grid-template-rows: 230px 120px;
-        font-size: 40px;
+        grid-template-rows: 90px 90px;
     }
 
     #logo {  
         grid-column: 1 ;
         grid-row: 1;
-        margin-left: 50px;
-        width: 250px;
-        
+        margin-left: 1em;
     }
 
     #link-hebergements {
         grid-column: 1;
         grid-row: 2;
-        border-bottom: 8px solid #F2F2F2;
+        border-bottom: 4px solid #F2F2F2;
     }
 
     #link-activites {
         grid-column: 2;
         grid-row: 2;     
-        border-bottom: 8px solid #F2F2F2;
+        border-bottom: 4px solid #F2F2F2;
     }
 
     #link-inscrire {
-        margin-right: 50px;
+        margin-right: 1em;
         grid-column: 2;
         grid-row: 1;
         justify-content: flex-end;
         font-family: "Raleways-extra-bold" ;
         font-weight: 100;
-        font-size: 42px;
     }
 
     #link-hebergements:focus {
@@ -778,52 +781,51 @@ footer a{
     /*-----*/
    
     #section1 {
-        width: 92%;
+        width: 85%;
         margin: auto;
         display: flex;
         flex-direction: column;
     }
 
     #tagline h2 {
-        margin: 85px 0 35px 0;
+        margin: 40px 0 15px 0;
     }
 
     #tagline p {
         margin: 0;
     }
+
     /*---*/
 
     #locationSearch {
         width: 90%;
-        height: 130px;
-        margin: 6em 0 2.5em 0;
+        height: 70px;
+        margin: 2em auto 1.5em auto;
         justify-content: center;    
     }
 
     #locationSearch i {
         padding: 1.4em 1.1em;
-        
-        font-size: 45px;
-        border-bottom-left-radius: 40px;
-        border-top-left-radius: 40px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
     }
 
     #locationSearch #address {
         flex: 1;
         padding-left: 1em;
-        font-size: 50px;
         font-family: "Raleways-extra-bold";
         font-weight: 100;
+        position: relative;
     }
 
     #locationSearch button {
-        height: 130px;
         position: absolute;
-        right: 40px;
+        border-radius: 25px;
         border: none;
-        border-radius: 40px;
-        width: 135px;
-        font-size: 45px;
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+        right: 8%;
     }
 
     #locationSearch button .text {
@@ -836,50 +838,50 @@ footer a{
 
     /*---*/
 
+    #filtreBox {
+        margin: 1em 0 1em 0;
+    }
+
     #filtreBox h3{
-        margin: 0px 0px 20px 0px;
+       margin: 0 0 .5em 0;
     }
 
     #filtreBox .filter {   
-        margin: 1em 1.4em 1em 0em;
-        height: 125px;  
+        margin: .5em 1em .5em 0em;  
         border: 5px solid #F2F2F2; 
     }
 
     #filtreBox .filter span {
-        font-size: 42px;
-        padding: 0 1em 0 1.6em;
+        padding: 0 .8em 0 1em;
         font-family: "Raleways-extra-bold";
         font-weight: 100;
+        font-size: 28px;
     }
 
+
     #filtreBox .filter::before {
-        height: 3em;
-        width: 3em;
-        font-size: 45px;
+        height: 2.8em;
+        width: 2.8em;
     }
 
     /*---*/
 
     #info {
-        margin: 20px 0 50px 0;
+        margin: 1.5em 0 2.5em 0;
         align-items: flex-start;
-        height: 130px;
     }
 
-    #info i {
-        font-size: 32px;
-    }
 
     #info p {
         align-items: flex-start;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     /*-----*/
 
     #doubleBox {
         flex-flow: column-reverse;
+        margin-bottom: 30px;
     }
 
     #box1 {
@@ -888,41 +890,47 @@ footer a{
         background-color: white;
     }
     #box1 .title2 {
-        margin: 60px 0;
+        margin: 25px 0;
     }
 
     #heberBox {
         flex-direction: column;
+        width: 90%;
+        margin: auto; 
     }
 
     .heberTile {
+        height: 280px;
         width: auto;
-        height: 480px;
-        padding: 12px;
+        padding: 8px;
         margin-bottom: 40px;
-        border-radius: 50px;   
+        border-radius: 30px;   
     }
 
     .heberPicture {
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-        height: 290px;
+        height: 60%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
     }
 
     .heberTile .legende {
-        padding: 15px 0 0 20px;
+        height: 40%;
+        padding: 5px 0 0 5px;
+    }
+
+    .heberTile h3{
+        margin: 5px 0 0 14px;
     }
 
     .heberTile p {
-        margin: 10px 14px;
+        margin: 0 13px 5px 13px;
         font-weight: 100;
-        font-size: 38px;
     }
 
     .heberTile .note {
         margin-top: 1px;
-        font-size: 32px;
         height: 2.2em;
+        font-size: 20px;
     }
 
     .heberPicture {
@@ -931,8 +939,7 @@ footer a{
     }
 
     #seeMore {
-        margin: 60px 0 30px 0;
-        font-size: 50px;
+        margin: 0 0 30px 0;
         font-family: "Raleways-extra-bold";
         font-weight: 100;
     }
@@ -944,43 +951,41 @@ footer a{
     }
 
     #titleLine{
-        margin: 60px 0 15px 0;
-    }
-
-    #titleLine .fas {
-        font-size: 65px;
+        margin: 1.5em 0 3em 0;
+        font
     }
 
     #popBox {
-        padding: 60px 0 60px 0;
+        padding: 0 0 3em 0;
+        width: 90%;
+        margin: auto;
     }
 
     .popTile {
-        height: 360px;
-        padding: 13px;
-        border-radius: 50px;
+        padding: 7px;
+        height: 280px;
+        border-radius: 30px;
         margin-bottom: 30px; 
     }
 
     .popPicture {
-        height:360px;
-        width: 360px;
-        border-top-left-radius: 38px;
-        border-bottom-left-radius: 38px;
+        width: 40%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
     }
 
     .popTile .legende {
-        padding: 20px 0 0 55px;
+        width:60%;
+        padding: 15px 10px 0 40px;
     }
 
     .popTile p {
         font-weight: 100;
-        font-size: 38px;
     }
 
     .popTile .note {
-        font-size: 32px;
         height: 2em;
+        font-size: 20px;    
     }
 
     /*-----*/
@@ -989,23 +994,27 @@ footer a{
         display:grid;
         height: auto;
         width: auto;
-        padding: 0 70px 0 70px;
+        padding: 0 10% 0 10%;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 500px);
+        grid-template-rows: repeat(6, 300px);
         grid-row-gap:70px ;
     }
 
     #activites {
-        margin-left: 70px;
-        margin-bottom:70px;
+        margin-left: 42px;
+        margin-bottom:42px;
     }
     .activityTile {
-        border-radius: 50px;
+        border-radius: 30px;
     }
 
     .activityPicture {
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .activityTile .title3 {
+        height: 25%;
     }
 
     .one {
@@ -1035,27 +1044,24 @@ footer a{
         grid-row: 6;
     }
 
-    .activityTile .title3 {
-        height: 150px;
-    }
 
     /*-----*/
 
     footer {
-        margin-top: 140px;
+        margin-top: 60px;
         flex-direction: column;
-        padding-left: 45px;   
+        padding:  0 0 50px 17px;
+        font-size: 20px;
     }
 
     footer .title3 {
-        padding: 100px 0 50px 0;
-        font-size: 50px;
+        padding: 60px 0 20px 0;
+        font-size: 28px;
     }
 
-    footer a {
-        font-size:42px;
+    footer a{
         font-weight: 600;
-        padding: 18px 0;
+        padding: 10px 0;
     }
 
     #about {
@@ -1064,10 +1070,12 @@ footer a{
      
     #assist {
         width: 100%;
+
     }
 
     #ourH{
         width: 100%;
+        
     }
 }
     
