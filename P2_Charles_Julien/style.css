@@ -887,8 +887,7 @@ footer a{
     }
 
     #heberBox {
-        flex-direction: row wrap;
-
+        flex-flow: row wrap;
     }
 
     .heberTile {
